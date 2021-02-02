@@ -1,0 +1,162 @@
+#arduino {
+    position: relative;
+    margin: 5em;
+    width: 20em;
+    height: 15em;
+}
+
+#main-body {
+    position: absolute;
+
+    width: 95%;
+    height: 100%;
+    background: #00929F;
+    border-radius: 0.2em;
+}
+
+#side-body {
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
+
+    width: 7%;
+    height: 70%;
+    background: #00929F;
+    clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+}
+
+#reset {
+    width: 1.8em;
+    height: 1.8em;
+
+    position: relative;
+    left: 1em;
+    top: 0.3em;
+}
+
+#reset-body {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+
+    position: absolute;
+}
+
+#reset-button {
+    background-color: #f00;
+    width: 60%;
+    height: 60%;
+    border-radius: 60%;
+
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+#reset-button:hover {
+    border: 2px solid #a00;
+    top: calc(20% - 2px);
+    left: calc(20% - 2px);
+}
+
+.pins {
+    height: 1.1em;
+    background-color: #000;
+    position: absolute;
+}
+
+#digital-pins {
+    width: 60%;
+
+    right: 8%;
+    top: 3%;
+}
+
+#usb-power {
+    height: 3.5em;
+    width: 5em;
+    background: #8E9090;
+
+    position: absolute;
+    top: 3em;
+    left: -2.5em;
+}
+
+.led {
+    width: 1em;
+    height: 1em;
+    position: relative;
+}
+
+.led-pins {
+    background-color: #8C7965;
+    width: 100%;
+    height: 40%;
+
+    position: absolute;
+    top: 30%;
+}
+
+.led-bulb {
+    background-color: #F47B20;
+    height: 60%;
+    width: 60%;
+    border-radius: 0.75em;
+
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.led-bulb:hover {
+    background-color: #fee !important;
+}
+
+#pin13-led, #tx-led, #rx-led {
+    top: 10%;
+    left: 40%;
+}
+
+#power-led {
+    top: 10%;
+    left: 75%;
+}
+
+#power-led > .led-bulb {
+    background-color: #8DC63F;
+}
+
+#microcontroller {
+    background-color: #000;
+    width: 50%;
+    height: 15%;
+
+    position: absolute;
+    bottom: 25%;
+    right: 8%;
+}
+
+#analog-pins {
+    width: 22%;
+
+    right: 8%;
+    bottom: 3%;
+}
+
+#power-pins {
+    width: 25%;
+
+    left: 40%;
+    bottom: 3%;
+}
+
+#jack-power {
+    position: absolute;
+    top: 11em;
+    left: -12px;
+
+    background: #000000;
+    height: 40px;
+    width: 60px;
+    clip-path: polygon(0% 0%, 20% 0%, 20% 10%, 100% 10%, 100% 90%, 20% 90%, 20% 100%, 0% 100%);
+}
