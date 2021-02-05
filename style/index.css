@@ -11,7 +11,7 @@
     width: 95%;
     height: 100%;
     background: #00929F;
-    border-radius: 0.2em;
+    border-radius: 0.4em;
 }
 
 #side-body {
@@ -140,9 +140,30 @@
     background-color: #8DC63F;
 }
 
+#board-logo {
+    position: absolute;
+    left: 9%;
+    top: 57%;
+    font-family: monospace;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
 #microcontroller {
-    position: relative;
-    top: 18%;
+    position: absolute;
+    top: 55%;
     left: 42%;
 
     height: 20%;
