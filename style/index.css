@@ -177,7 +177,7 @@ p#power-description {
     position: relative;
 }
 
-#power-led > .led-bulb {
+#power-led > .led > .led-bulb {
     background-color: #8DC63F;
 }
 
