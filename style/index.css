@@ -103,6 +103,7 @@
     width: 1em;
     height: 1em;
     position: absolute;
+    margin: auto;
 }
 
 .led-pins {
@@ -269,6 +270,15 @@ h2 {
 
     p#power-description {
         font-size: 14px;
+    }
+
+    #github-mark {
+        height: 1.5em;
+    }
+
+    #tx-led {
+        top: 27%;
+        left: calc(40% - 1.5em);
     }
 
     h1, h2 {
