@@ -250,3 +250,37 @@ h2 {
     width: 3.5em;
     clip-path: polygon(0% 0%, 20% 0%, 20% 10%, 100% 10%, 100% 90%, 20% 90%, 20% 100%, 0% 100%);
 }
+
+
+@media (max-width: 630px) {
+    #arduino {
+        font-size: 15px;
+    }
+
+    #power-led {
+        left: 48%;
+    }
+
+    p#power-description {
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    #arduino {
+        margin-top: 0.1em;
+        margin-left: 2.5em;
+    }
+}
+
+@media (max-width: 350px) {
+    #arduino {
+        transform: rotate(90deg);
+        margin-top: 7em;
+        margin-left: 0.1em;
+    }
+}
