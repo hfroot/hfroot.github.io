@@ -251,6 +251,12 @@ h2 {
     clip-path: polygon(0% 0%, 20% 0%, 20% 10%, 100% 10%, 100% 90%, 20% 90%, 20% 100%, 0% 100%);
 }
 
+#twitter-logo {
+    height: 1.1em;
+    position: relative;
+    top: 27%;
+    left: 37%;
+}
 
 @media (max-width: 630px) {
     #arduino {
