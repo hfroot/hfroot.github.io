@@ -99,7 +99,7 @@
 .led {
     width: 1em;
     height: 1em;
-    position: relative;
+    position: absolute;
 }
 
 .led-pins {
@@ -122,18 +122,40 @@
     left: 20%;
 }
 
-.led-bulb:hover {
+#pin13-led {
+    top: 17%;
+    left: 40%;
+}
+
+#github-link:hover > #tx-led > .led > .led-bulb {
     background-color: #fee !important;
 }
 
-#pin13-led, #tx-led, #rx-led {
-    top: 10%;
+#tx-led {
+    top: 30%;
+    left: calc(40% - 1em); /*1em is height of github logo*/
+    position: absolute;
+    display: flex;
+}
+
+#tx-led > .led {
+    position: relative;
+}
+
+#github-mark {
+    height: 1em;
+    position: relative;
+    left: -0.1em;
+}
+
+#rx-led {
+    top: 38%;
     left: 40%;
 }
 
 #power-led {
-    top: 10%;
-    left: 75%;
+    top: 22%;
+    left: 78%;
 }
 
 #power-led > .led-bulb {
