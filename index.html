@@ -12,72 +12,75 @@
   <!-- Design adapted from https://www.arduino.cc/en/guide/BoardAnatomy -->
   <!-- For great tutorials on creating objects with HTML+CSS only, check out Sarah L. Fossheim's posts, such as https://fossheim.io/writing/posts/css-polaroid-camera/ -->
   <body>
-    <div id="arduino">
-      <div id="board">
-        <div id="main-body"></div>
-        <div id="side-body"></div>
-      </div>
-      <!-- Left to right, top to bottom -->
-      <div id="reset">
-        <div id="reset-body"></div>
-        <a href="#" onClick="alert('You look like a thing and I love you\n\n- Janelle Shane\'s AI')"><div id="reset-button"></div></a>
-      </div>
-      <div id="digital-pins" class="pins">
-        <div class="pin-body"></div>
-        <div class="pin-holes"></div>
-      </div>
-      <div id="usb-power"></div>
-      <div id="pin13-led" class="led">
-        <div class="led-pins"></div>
-        <div class="led-bulb"></div>
-      </div>
-      <a href="http://script-reader.rootacc.es" id="script-reader-link">
-        <div id="power-led" class="led-container">
-          <p id="power-description">
-            script-reader
-          </p>
-          <div class="led">
-            <div class="led-pins"></div>
-            <div class="led-bulb"></div>
-          </div>
+    <div id="arduino-container">
+      <div id="arduino">
+        <div id="board">
+          <div id="main-body"></div>
+          <div id="side-body"></div>
         </div>
-      </a>
-      <a href="https://github.com/hfroot" id="github-link">
-        <div id="tx-led" class="led-container">
-          <div id="tx-description">
-            <img id="github-mark" src="assets/GitHub-Mark-Light-32px.png">
-          </div>
-          <div class="led">
-            <div class="led-pins"></div>
-            <div class="led-bulb"></div>
-          </div>
+        <!-- Left to right, top to bottom -->
+        <div id="reset">
+          <div id="reset-body"></div>
+          <a href="#" onClick="alert('You look like a thing and I love you\n\n- Janelle Shane\'s AI')"><div id="reset-button"></div></a>
         </div>
-      </a>
-      <div id="rx-led" class="led">
-        <div class="led-pins"></div>
-        <div class="led-bulb"></div>
-      </div>
-      <div id="board-logo">
-        <h1>HELEN ROOT</h1>
-        <h2>rootacc.es</h2>
-      </div>
-      <div id="microcontroller">
-        <div id="microcontroller-pins"></div>
-        <div id="microcontroller-body"></div>
-      </div>
-      <div id="analog-pins" class="pins">
-        <div class="pin-body"></div>
-        <div class="pin-holes"></div>
-      </div>
-      <div id="power-pins" class="pins">
-        <div class="pin-body"></div>
-        <div class="pin-holes"></div>
-      </div>
-      <a href="https://twitter.com/helenfroot" id="twitter-link">
-        <div id="jack-power">
-          <img src="assets/2021 Twitter logo - white.png" id="twitter-logo">
+        <div id="digital-pins" class="pins">
+          <div class="pin-body"></div>
+          <div class="pin-holes"></div>
         </div>
-      </a>
+        <div id="usb-power"></div>
+        <div id="pin13-led" class="led">
+          <div class="led-pins"></div>
+          <div class="led-bulb"></div>
+        </div>
+        <a href="http://script-reader.rootacc.es" id="script-reader-link">
+          <div id="power-led" class="led-container">
+            <p id="power-description">
+              script-reader
+            </p>
+            <div class="led">
+              <div class="led-pins"></div>
+              <div class="led-bulb"></div>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/hfroot" id="github-link">
+          <div id="tx-led" class="led-container">
+            <div id="tx-description">
+              <img id="github-mark" src="assets/GitHub-Mark-Light-32px.png">
+            </div>
+            <div class="led">
+              <div class="led-pins"></div>
+              <div class="led-bulb"></div>
+            </div>
+          </div>
+        </a>
+        <div id="rx-led" class="led">
+          <div class="led-pins"></div>
+          <div class="led-bulb"></div>
+        </div>
+        <div id="board-logo">
+          <h1>HELEN ROOT</h1>
+          <h2>rootacc.es</h2>
+        </div>
+        <div id="microcontroller">
+          <div id="microcontroller-pins"></div>
+          <div id="microcontroller-body"></div>
+        </div>
+        <div id="analog-pins" class="pins">
+          <div class="pin-body"></div>
+          <div class="pin-holes"></div>
+        </div>
+        <div id="power-pins" class="pins">
+          <div class="pin-body"></div>
+          <div class="pin-holes"></div>
+        </div>
+        <a href="https://twitter.com/helenfroot" id="twitter-link">
+          <div id="jack-power">
+            <img src="assets/2021 Twitter logo - white.png" id="twitter-logo">
+          </div>
+        </a>
+      </div>
     </div>
+    <p id="rotate-request">Please rotate device, or view on a wider screen</p>
   </body>
 </html>

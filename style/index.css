@@ -1,8 +1,16 @@
+#arduino-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 #arduino {
     position: relative;
-    margin: 5em;
     width: 20em;
     height: 15em;
+    margin-top: 5em;
+    margin-left: 2.5em; /* width of USB port */
 
     font-family: monospace;
     font-size: 25px; /* use this to resize board */
@@ -11,8 +19,8 @@
 #main-body {
     position: absolute;
 
-    width: 95%;
-    height: 100%;
+    width: 19em;
+    height: 15em;
     background: #00929F;
     border-radius: 0.4em;
 }
@@ -259,17 +267,27 @@ h2 {
     left: 37%;
 }
 
-@media (max-width: 630px) {
-    #arduino {
-        font-size: 15px;
-    }
+#rotate-request {
+    display: none;
+}
 
-    #power-led {
-        left: 48%;
+@media (max-height: 500px) {
+    #arduino {
+        margin-top: 0.1em;
+    }
+}
+
+@media (max-width: 650px) or (max-height: 400px) {
+    #arduino {
+        font-size: 20px;
     }
 
     p#power-description {
         font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
     }
 
     #github-mark {
@@ -280,23 +298,36 @@ h2 {
         top: 27%;
         left: calc(40% - 1.5em);
     }
+}
+
+@media (max-width: 520px) or (max-height: 300px) {
+    #arduino {
+        font-size: 15px;
+    }
+
+    #power-led {
+        left: 48%;
+    }
 
     h1, h2 {
         font-size: 16px;
     }
 }
 
-@media (max-width: 400px) {
-    #arduino {
-        margin-top: 0.1em;
-        margin-left: 2.5em;
-    }
-}
-
-@media (max-width: 350px) {
+@media (max-width: 374px) {
     #arduino {
         transform: rotate(90deg);
         margin-top: 7em;
         margin-left: 0.1em;
+    }
+}
+
+@media (max-width: 325px) {
+    #arduino-container {
+        display: none;
+    }
+
+    #rotate-request {
+        display: block;
     }
 }
