@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Helen Root's handful of KBs</title>
+    <title>Helen's handful of KBs</title>
     <meta name="description" content="You have gained root access" />
     <meta name="author" content="rootacc.es" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="/style/arduino.css" />
   </head>
 
   <!-- Design adapted from https://www.arduino.cc/en/guide/BoardAnatomy -->
@@ -27,13 +27,20 @@
         <div class="pin-holes"></div>
       </div>
       <div id="usb-power"></div>
-      <div id="pin13-led" class="led">
-        <div class="led-pins"></div>
-        <div class="led-bulb"></div>
-      </div>
+      <a href="/posts" id="blog-link">
+        <div id="pin13-led" class="led-container">
+          <p id="pin13-description" class="led-description">
+            Blog
+          </p>
+          <div class="led">
+            <div class="led-pins"></div>
+            <div class="led-bulb"></div>
+          </div>
+        </div>
+      </a>
       <a href="http://script-reader.rootacc.es" id="script-reader-link">
         <div id="power-led" class="led-container">
-          <p id="power-description">
+          <p id="power-description" class="led-description">
             script-reader
           </p>
           <div class="led">
@@ -45,7 +52,7 @@
       <a href="https://github.com/hfroot" id="github-link">
         <div id="tx-led" class="led-container">
           <div id="tx-description">
-            <img id="github-mark" src="assets/GitHub-Mark-Light-32px.png" alt="GitHub">
+            <img id="github-mark" src="/assets/GitHub-Mark-Light-32px.png" alt="GitHub">
           </div>
           <div class="led">
             <div class="led-pins"></div>
@@ -75,7 +82,7 @@
       </div>
       <a href="https://twitter.com/helenfroot" id="twitter-link">
         <div id="jack-power">
-          <img src="assets/2021 Twitter logo - white.png" id="twitter-logo" alt="Twitter">
+          <img src="/assets/2021 Twitter logo - white.png" id="twitter-logo" alt="Twitter">
         </div>
       </a>
     </div>
