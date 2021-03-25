@@ -1,0 +1,302 @@
+#arduino {
+    position: relative;
+    margin: 5em;
+    width: 20em;
+    height: 15em;
+
+    font-family: monospace;
+    font-size: 25px; /* use this to resize board */
+}
+
+#main-body {
+    position: absolute;
+
+    width: 95%;
+    height: 100%;
+    background: #00929F;
+    border-radius: 0.4em;
+}
+
+#side-body {
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
+
+    width: 7%;
+    height: 70%;
+    background: #00929F;
+    clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+}
+
+#reset {
+    width: 1.8em;
+    height: 1.8em;
+
+    position: relative;
+    left: 1em;
+    top: 0.3em;
+}
+
+#reset-body {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+
+    position: absolute;
+}
+
+#reset-button {
+    background-color: #f00;
+    width: 60%;
+    height: 60%;
+    border-radius: 60%;
+
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+#reset-button:hover {
+    border: 2px solid #a00;
+    top: calc(20% - 2px);
+    left: calc(20% - 2px);
+}
+
+.pins {
+    height: 1.1em;
+    position: absolute;
+}
+
+.pin-body {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.pin-holes {
+    background: repeating-linear-gradient(90deg, #00000000, #00000000 0.35em, #8E9090 0.35em, #8E9090 0.7em);
+    height: 0.35em;
+
+    position: relative;
+    top: -65%;
+    right: 0.1em;
+}
+
+#digital-pins {
+    width: 60%;
+
+    right: 8%;
+    top: 3%;
+}
+
+#usb-power {
+    height: 3em;
+    width: 4.5em;
+    background: #8E9090;
+
+    position: absolute;
+    top: 3em;
+    left: -2.5em;
+}
+
+.led {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    margin: auto;
+}
+
+.led-pins {
+    background-color: #8C7965;
+    width: 100%;
+    height: 40%;
+
+    position: absolute;
+    top: 30%;
+}
+
+.led-bulb {
+    background-color: #F47B20;
+    height: 60%;
+    width: 60%;
+    border-radius: 0.75em;
+
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+#pin13-led {
+    top: 17%;
+    left: 40%;
+}
+
+a:hover > .led-container > .led > .led-bulb {
+    background-color: #fee !important;
+}
+
+.led-container {
+    position: absolute;
+    display: flex;
+}
+
+p#power-description {
+    white-space: nowrap;
+    font-size: 16px;
+    margin: auto;
+    margin-right: 0.2em;
+    color: #fff;
+}
+
+#tx-led {
+    top: 30%;
+    left: calc(40% - 1em); /*1em is height of github logo*/
+}
+
+#tx-led > .led {
+    position: relative;
+}
+
+#github-mark {
+    height: 1em;
+    position: relative;
+    left: -0.1em;
+}
+
+#rx-led {
+    top: 38%;
+    left: 40%;
+}
+
+#power-led {
+    top: 22%;
+    left: 57%;
+}
+
+#power-led > .led {
+    position: relative;
+}
+
+#power-led > .led > .led-bulb {
+    background-color: #8DC63F;
+}
+
+#board-logo {
+    position: absolute;
+    left: 9%;
+    top: 57%;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+}
+
+#microcontroller {
+    position: absolute;
+    top: 55%;
+    left: 42%;
+
+    height: 20%;
+    width: 50%;
+}
+
+#microcontroller-pins {
+    position: absolute;
+
+    background: repeating-linear-gradient(90deg, #00000000, #00000000 0.4em, #8E9090 0.4em, #8E9090 0.8em);
+    height: 100%;
+    width: 100%;
+}
+
+#microcontroller-body {
+    position: absolute;
+    margin-top: 3%;
+
+    background-color: #000;
+    width: 100%;
+    height: 80%;
+}
+
+#analog-pins {
+    width: 22%;
+
+    right: 8%;
+    bottom: 3%;
+}
+
+#power-pins {
+    width: 25%;
+
+    left: 40%;
+    bottom: 3%;
+}
+
+#jack-power {
+    position: absolute;
+    top: 11em;
+    left: -0.7em;
+
+    background: #000000;
+    height: 2.5em;
+    width: 3.5em;
+    clip-path: polygon(0% 0%, 20% 0%, 20% 10%, 100% 10%, 100% 90%, 20% 90%, 20% 100%, 0% 100%);
+}
+
+#twitter-logo {
+    height: 1.1em;
+    position: relative;
+    top: 27%;
+    left: 37%;
+}
+
+@media (max-width: 630px) {
+    #arduino {
+        font-size: 15px;
+    }
+
+    #power-led {
+        left: 48%;
+    }
+
+    p#power-description {
+        font-size: 14px;
+    }
+
+    #github-mark {
+        height: 1.5em;
+    }
+
+    #tx-led {
+        top: 27%;
+        left: calc(40% - 1.5em);
+    }
+
+    h1, h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    #arduino {
+        margin-top: 0.1em;
+        margin-left: 2.5em;
+    }
+}
+
+@media (max-width: 350px) {
+    #arduino {
+        transform: rotate(90deg);
+        margin-top: 7em;
+        margin-left: 0.1em;
+    }
+}
