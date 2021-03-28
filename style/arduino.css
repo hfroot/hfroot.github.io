@@ -143,6 +143,10 @@ a:hover > .led-container > .led > .led-bulb {
     display: flex;
 }
 
+.led-container > .led {
+    position: relative;
+}
+
 p.led-description {
     white-space: nowrap;
     font-size: 16px;
@@ -161,17 +165,9 @@ p#pin13-description {
     left: calc(40% - 1.69em); /*1.69em is width of text*/
 }
 
-#pin13-led > .led {
-    position: relative;
-}
-
 #tx-led {
     top: 30%;
     left: calc(40% - 1em); /*1em is height of github logo*/
-}
-
-#tx-led > .led {
-    position: relative;
 }
 
 #github-mark {
@@ -193,10 +189,6 @@ p#power-description {
 #power-led {
     top: 22%;
     left: 57%;
-}
-
-#power-led > .led {
-    position: relative;
 }
 
 #power-led > .led > .led-bulb {
@@ -300,17 +292,21 @@ h2 {
         left: 48%;
     }
 
-    p#power-description {
+    p.led-description {
         font-size: 14px;
     }
 
     #github-mark {
-        height: 1.5em;
+        height: 1.3em;
     }
 
     #tx-led {
-        top: 27%;
-        left: calc(40% - 1.5em);
+        top: 28%;
+        left: calc(40% - 1.3em);
+    }
+
+    #pin13-led {
+        left: calc(40% - 2.4em);
     }
 
     h1, h2 {
