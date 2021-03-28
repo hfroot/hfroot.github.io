@@ -1,16 +1,8 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>{{ title }} | rootacc.es</title>
-        <link rel="stylesheet" href="/style/post.css" />
-    </head>
-    <body>
-        <nav><a href="/">Home</a></nav>
-        <div class="post">
-            <h1>{{ title }}</h1>
+---
+layout: blog.liquid
+---
+<main class="post">
+    <h1>{{ title }}</h1>
 
-            {{ content }}
-        </div>
-    </body>
-</html>
+    {{ content }}
+</main>
