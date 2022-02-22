@@ -181,6 +181,11 @@ p#pin13-description {
     left: 40%;
 }
 
+p#rx-description {
+    margin: auto;
+    margin-right: 0.2em;
+}
+
 p#power-description {
     margin: auto;
     margin-right: 0.2em;
