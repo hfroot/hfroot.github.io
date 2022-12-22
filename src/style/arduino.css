@@ -105,6 +105,20 @@
     left: -2.5em;
 }
 
+#usb-power:hover {
+    border: 0rem solid #fff;
+    border-bottom-width: 0.2rem;
+    border-right-width: 0.2rem;
+}
+
+#usb-power:hover > p {
+    font-size: 1.2rem;
+}
+
+#word-game-description {
+    margin-left: 0.4rem;
+}
+
 /* Generic LEDs */
 
 .led {
@@ -151,6 +165,10 @@ p.led-description {
     white-space: nowrap;
     font-size: 16px;
     color: #fff;
+}
+
+.led-container:hover > p {
+    font-size: 18px;
 }
 
 /* Specific LEDs */
