@@ -1,4 +1,13 @@
-# Flat welcome pack
+---
+title: Welcome to my flat - a guide
+date: 2026-06-04
+---
+
+You are under no obligation to read this btw
+
+## Entering the building
+
+There is a buzzer at the building entrance
 
 There are no lifts, I can give you a hand with your bags if you'd like!
 
@@ -6,6 +15,8 @@ I will give you keys to the flat, a smaller silver one is for the building door 
 
 I avoid using the overhead lights as much as possible, they are gross.
 Give me a heads up if I am in the room and you're about to turn the lights on plz.
+
+The sounds between the flats can travel a bit - Sometimes when my neighbour leaves and enters it sounds like it's coming from my front door.
 
 ## Rooms
 
